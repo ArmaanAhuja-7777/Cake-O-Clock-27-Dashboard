@@ -52,3 +52,9 @@ export const createCategory = async (token, data) => {
   });
   return await res.json();
 };
+
+
+export const getAllCategories = async () => {
+  const res = await fetch(`${BASE_URL}/categories`);
+  return await res.json();
+};
